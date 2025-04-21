@@ -4,7 +4,6 @@
 This is prototype to do the following
 1. SFT - LoRA, QLoRA, Full fine tune 
 2. Policy Alignment - DPO, RLFH (PPO), RLAIF, GRPO,
-It supports:
 
 Uses the following 
 1. Local training only
