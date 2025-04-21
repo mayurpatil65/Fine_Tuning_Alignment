@@ -1,6 +1,10 @@
+
+# SFT and Policy Alignment on Local Models
+
 This is prototype to do the following
-1. SFT - LoRA, QLoRA, Full fine tune
+1. SFT - LoRA, QLoRA, Full fine tune 
 2. Policy Alignment - DPO, RLFH (PPO), RLAIF, GRPO,
+It supports:
 
 Uses the following 
 1. Local training only
@@ -10,32 +14,62 @@ Uses the following
 5. Dataset for SFT - OpenAssistant/oasst1
 6. GPU RTX 2070 (8GB)
 
-Need the following packages
+> This is a fully local POC developed for research and internal use.
+ 
+## Key Features
 
-1. transformers
-2. datasets
-3. peft
-4. torch
-5. accelerate
-6. tensorboard
-
-# Part 1 SFT LoRA
-1. Dataset Preparation:
+### SFT with LoRA 
+Dataset Preparation:
 Download the Raw Dataset
 ```data/get_dataset.py```
-2. Process dataset to Instruction Format:
+
+Process dataset to Instruction Format:
 ```utils/data_utils.py```
-3. Model Preparation:
+
+Model Preparation:
 Download Base Model Locally
 ```models/base/get_model.py```
-4. Fine-Tuning with LoRA:
+
+Fine-Tuning with LoRA:
 ```scripts/train_lora_sft.py```
-5. Fine-tuned adapters will be saved in:
+
+Fine-tuned adapters will be saved in:
 ```models/adapters/qwen-0.5b-lora/```
-6. Evaluation:
+
+Evaluation:
 Evaluate the Base Model
 ```scripts/eval_base.py```
-7. Evaluate the Fine-Tuned (LoRA) Model
+ 
+Evaluate the Fine-Tuned (LoRA) Model
 ```scripts/eval_lora.py```
+
+## Dependencies 
+
+transformers
+
+datasets
+
+peft
+
+torch
+
+accelerate
+
+tensorboard
+
+ 
+
+## Final Notes
+- Fully local: base model, adapters, etc
+
+- SFT with LoRA, QLoRA, Full fine-tune
+
+- Policy Alignment with DPO, RLFH (PPO), RLAIF, GRPO
+
+- Modular: Easily extend with new techniques
+
+
+## Roadmap
+ 1. Future stuff
 
 
