@@ -46,7 +46,7 @@ Evaluate the Fine-Tuned (LoRA) Model
 Similar structure to LoRA
 
 ### SFT Full Fine Tune
-# Unresonable to execute locally
+#### Unresonable to execute locally
 
 ## Dependencies 
 
