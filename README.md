@@ -42,6 +42,12 @@ Evaluate the Base Model
 Evaluate the Fine-Tuned (LoRA) Model
 ```scripts/eval_lora.py```
 
+### SFT with QLoRA 
+Similar structure to LoRA
+
+### SFT Full Fine Tune
+# Unresonable to execute locally
+
 ## Dependencies 
 
 transformers
